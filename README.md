@@ -16,4 +16,12 @@ The only difference right now is post-receive would send the commit hash too, wh
 
 Compile the main.go and deploy it in the repository's hook directory, rename it to post-receive or post-update suiting your need.
 
+Create bitrise.json in your $GIT_DIR (repository's folder, just one level up from hook dir) with the following content:
 
+```json
+{
+  "api_token":"BITRISE_API_TOKEN",
+  "api_slug":"BITRISE_API_SLUG"
+}
+
+```
